@@ -19,6 +19,8 @@ function App() {
     });
   };
 
+  const combineString = cells.join("");
+
   return (
     <div className="container">
       {cells.map((cell, idx) => {
@@ -36,6 +38,8 @@ function App() {
           </div>
         );
       })}
+
+      {combineString}
     </div>
   );
 }
