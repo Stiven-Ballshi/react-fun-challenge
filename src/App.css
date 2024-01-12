@@ -1,0 +1,48 @@
+body {
+  background-color: black;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.container {
+  display: flex;
+}
+
+.inner input {
+  width: 40px;
+  height: 40px;
+  background: none;
+  color: white;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 3px ;
+}
+
+.plus {
+  position: absolute;
+  height: 40px;
+  width: 10px;
+  /* background: red; */
+  right: -10%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.plus:hover {
+  background: red;
+}
